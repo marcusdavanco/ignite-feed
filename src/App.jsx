@@ -1,5 +1,16 @@
+import { Post } from "./Post";
+
 function App() {
-  return <h1>Hello World</h1>;
+  return (
+    <div>
+      <Post />
+      <Post />
+      <Post />
+      <Post />
+      <Post />
+      <Post />
+    </div>
+  );
 }
 
 export default App;
