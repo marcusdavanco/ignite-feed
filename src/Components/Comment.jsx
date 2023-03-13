@@ -7,17 +7,17 @@ export function Comment() {
       <img src="https://github.com/marcusdavanco.png" />
       <div className={styles.commentBox}>
         <div className={styles.commentContent}>
-          <heder>
-            <div className={styles.aurthorAndTime}>
+          <header>
+            <div className={styles.authorAndTime}>
               <strong>Marcus Davanço</strong>
               <time title="11 de Maio às 08:13" dateTime="2022-05-11 08:13:30">
                 Cerca de 1 hora atrás
               </time>
             </div>
             <button title="Deletar comentário">
-              <Trash size={20} />
+              <Trash size={24} />
             </button>
-          </heder>
+          </header>
           <p>Muito bom Devon, parabéns!!</p>
         </div>
         <footer>
