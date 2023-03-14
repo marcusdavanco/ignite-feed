@@ -4,16 +4,16 @@ import { Avatar } from "./Avatar";
 import styles from "./Comment.module.css";
 
 export function Comment({ content, onDeleteComment }) {
-  function [likeCount, setLikeCount] = useState(0);
+  const [likeCount, setLikeCount] = useState(0);
 
   function handleDeleteComment() {
     onDeleteComment(content);
   }
 
   function handleLikeComment() {
-    setLikeCount(
-      likeCount + 1
-    );
+    setLikeCount((state) => {
+      return state + 1;
+    });
   }
 
   return (
