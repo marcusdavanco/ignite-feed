@@ -13,7 +13,7 @@ const posts = [
   {
     id: 1,
     author: {
-      avatarUrl: "https://gitub.com/marcusdavanco.png",
+      avatarUrl: "https://github.com/marcusdavanco.png",
       name: "Marcus Davanco",
       role: "CEO @ Serendip Software",
     },
@@ -31,7 +31,7 @@ const posts = [
   {
     id: 2,
     author: {
-      avatarUrl: "https://gitub.com/diego3g.png",
+      avatarUrl: "https://github.com/diego3g.png",
       name: "Diego Fernandes",
       role: "CTO @ Rocketseat",
     },
