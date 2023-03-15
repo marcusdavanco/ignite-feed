@@ -1,6 +1,7 @@
 import { Header } from "./Components/Header";
-import { Post } from "./Components/Post";
+import { Post, PostType } from "./Components/Post";
 import { Sidebar } from "./Components/Sidebar";
+
 import "./global.css";
 
 /* author: { avatar_url: "", name: '', role: "" }
@@ -9,7 +10,8 @@ import "./global.css";
  */
 
 // TODO: Replace for something more realistic
-const posts = [
+
+const posts: PostType[] = [
   {
     id: 1,
     author: {
@@ -58,14 +60,7 @@ function App() {
         <Sidebar />
         <main>
           {posts.map((post) => {
-            return (
-              <Post
-                key={post.id}
-                author={post.author}
-                content={post.content}
-                publishedAt={post.publishedAt}
-              />
-            );
+            return <Post key={post.id} post={post} />;
           })}
         </main>
       </div>
